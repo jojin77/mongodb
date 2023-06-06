@@ -1,5 +1,5 @@
 app:
-  name: AppzMongoDB
+  name: MongoDB
   code: AMDB
   notify: jjpaul@ecloudcontrol.com
 
