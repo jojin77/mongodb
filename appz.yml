@@ -37,4 +37,4 @@ properties:
   AUTH_KEY: 
     vault: AUTH_KEY
   
-revision : 6
+revision : 7
