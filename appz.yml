@@ -29,7 +29,7 @@ volumes:
   size: 5Gi  
   
 properties:
-  AUTH_ENABLE: 0
+  AUTH_ENABLE: 1
   DB_USER_ADMIN: appz
   DB_USER_ADMIN_PASSWORD:
     vault: DB_USER_ADMIN_PASSWORD
@@ -37,4 +37,4 @@ properties:
   AUTH_KEY: 
     vault: AUTH_KEY
   
-revision : 4
+revision : 5
