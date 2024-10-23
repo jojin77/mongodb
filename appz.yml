@@ -8,7 +8,7 @@ build:
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: mongo-5.0
+  image_template: mongo-6.0
   
 deploy:
   context: jojin77/DEV
@@ -29,12 +29,16 @@ volumes:
   size: 5Gi 
   
 properties:
-  AUTH_ENABLE: 1
-  DB_USER_ADMIN: appz
-  DB_USER_ADMIN_PASSWORD:
-    vault: DB_USER_ADMIN_PASSWORD
-  REPLICATION: 3
-  AUTH_KEY: 
-    vault: AUTH_KEY
-  
-revision : 19
+  revision : 1
+  AUTH_ENABLE : 0
+  DB_USER_ADMIN : appz
+  DB_USER_ADMIN_PASSWORD : 
+    vault : DB_USER_ADMIN_PASSWORD
+  MONGODB_HOST : 127.0.0.1
+  MONGODB_PORT : 27017
+  MASTER_ENABLE : yes
+  REPLICATION: 0
+  #AUTH_KEY :
+    #vault : AUTH_KEY
+  #APPZ_APP_NAME : mongodb-6-0
+  DISABLE_FLUENTD : 0
