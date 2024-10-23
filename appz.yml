@@ -4,7 +4,7 @@ app:
   notify: jjpaul@ecloudcontrol.com
 
 build:
-  version: 5.0
+  version: 6.0
   env: DEV
   build_file: none
   output_files: output/*.zip
@@ -13,7 +13,7 @@ build:
 deploy:
   context: jojin77/DEV
   type: statefulset
-  replicas: 3
+  replicas: 1
   port:
   - 27017
 
